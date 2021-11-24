@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+$page-color: hsl(225, 100%, 94%);
+$animate-speed: 1s;
+$primary-color: rgb(56,42,225);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,html{
+  font-size: 62.5%;
+  font-family: 'Red Hat Display', Helvetica,sans-serif;
+  background-image: url('../img/pattern-background-desktop.svg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: $page-color;
+  line-height: 1.4;
+  overflow: hidden;
+}
+
+
+.page{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  .card{
+    width: 500px;
+    max-height: 1500px;
+    // height: 500px;
+    background: #fff;
+    box-shadow: 0px 20px 20px -15px hsl(228deg, 45%, 44%);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+     h1{
+       margin: 60px 0 20px;
+     }
+   &.p-1{
+      h3{
+       margin: 20px 0 80px;
+       color: #7c808c;
+     }
+     h6{
+       margin: 80px 0 20px;
+     }
+   }
+   &.p-2{
+     ul{
+       list-style-type: none;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       margin: 0 0 20px;
+       li{
+         display: inline-block;
+         width: 33%;
+         margin: 0 0 20px;
+       }
+       a{
+         display: inline-block;
+         padding: 15px;
+         width: 50px;
+         height:50px;
+         border-radius: 50%;
+         background:#382ae1;
+         text-decoration: none;
+         font-size: 1.5rem;
+         color: #fff;
+         box-shadow: 1px 1px 5px 0px #382ae1;
+       }
+     }
+ 
+   }
+   &.p-3{
+    .form{
+      &-control{
+        margin: 0 0 20px;
+        label{
+          display: inline-block;
+          margin: 0 10px 0 0;
+        }
+        input{
+          padding: 5px 10px;
+          border-radius: 5px;
+          border: 1px solid $primary-color;
+        }
+      }
+    }
+   }
+  }
+}
+
+h1{
+  font-size: 3.5rem;
+}
+h3{
+  font-size: 2.5rem;
+}
+h6,a,label,p,input{
+  font-size: 1.5rem;
+}
+
+
+.btn{
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  width: 250px;
+  background: rgb(56,42,225);
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px -15px rgb(56, 42, 225);
+  margin: 0 0 20px;
+}
+
+.back-btn{
+  text-decoration: none;
+  color: #7c808c;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.flex-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.oval{
+  width: 125px !important;
+  border-radius: 50px !important;
+}
+
+.mb-5{
+  margin-bottom: 5rem !important;
+}
+
+.output-container{
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  .flex-cont{
+    width: 50%;
+    #wait-time,#turn-time{
+      text-align: left;
+    }
+  }
+}

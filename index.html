@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/265de0f93f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+  <title>Non-Preemptive Scheduling</title>
+</head>
+<body>
+ 
+  <section id="page-1" class="page">
+    <div class="card p-1">
+      <h1>Non-Preemptive Scheduling</h1>
+      <h3>FCFS, SJF, PRIO, DEADLINE, MLQ</h3>
+      <h6>by Millano Uy - 2ITB</h6>
+      <div class="flex-btn">
+        <a href="#page-2" class="btn">
+          Start
+        </a>
+      </div>
+    </div>
+    
+  </section>
+
+
+  <section id="page-2" class="page">
+    <div class="card p-2">
+      <h1 class="mb-5">Number of Processes?</h1>
+      <ul>
+        <li><a class="selectP"  href="#page-3">2</a></li>
+        <li><a class="selectP" href="#page-3">3</a></li>
+        <li><a class="selectP" href="#page-3">4</a></li>
+        <li><a class="selectP" href="#page-3">5</a></li>
+        <li><a class="selectP" href="#page-3">6</a></li>
+        <li><a class="selectP" href="#page-3">7</a></li>
+        <li><a class="selectP" href="#page-3">8</a></li>
+        <li><a class="selectP" href="#page-3">9</a></li>
+      </ul>
+      <div class="flex-btn">
+        <a href="#page-1" class="back-btn">
+          Back
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+    <section id="page-3" class="page">
+      <div class="card p-3">
+        <h1>Input Individual Arrival Time</h1>
+        <div class="form" id="at-content">
+        </div>
+        <div class="flex-btn">
+          <a href="#page-4" id="at-values" class="btn">
+            Next 
+          </a>
+          <a href="#page-2" class="back-btn">
+            Back
+          </a>
+        </div>
+      </div>
+      
+    </section>
+
+
+    <section id="page-4" class="page">
+      <div class="card p-3">
+        <h1>Input Individual Burst Time</h1>
+        <div class="form" id="bt-content">
+        </div>
+        <div class="flex-btn">
+          <a href="#page-5" id="bt-values" class="btn">
+            Next
+          </a>
+          <a href="#page-3"  class="back-btn">
+            Back
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="page-5" class="page">
+      <div class="card p-2">
+        <h1 class="mb-5">CPU Scheduling Algorithm</h1>
+        <ul>
+          <li><a class="selectLogic oval" href="#page-6">FCFS</a></li>
+          <li><a class="selectLogic oval" href="#page-6">SJF</a></li>
+          <li><a class="oval" href="#page-7">Prio</a></li>
+          <li><a class="oval" href="#page-8">DEADLINE</a></li>
+          <li><a class="selectLogic oval" href="#page-6">MLQ</a></li>
+          <li><a class="selectLogic oval" href="#page-6">Exit</a></li>
+        </ul>
+        <div class="flex-btn">
+          <a href="#page-4" class="back-btn">
+            Back
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-6" class="page">
+      <div class="card p-2">
+        <h1 class="mb-5">Output</h1>
+        <div class="output-container">
+            <div class="flex-cont">
+              <h6>Waiting Time Ave: <span id="wait-ave"> </span></h6>
+              <div id="wait-time">
+
+              </div>
+            </div>
+            <div class="flex-cont">
+              <h6>Turnaround Time Ave: <span id="turn-ave"> </span></h6>
+              <div  id="turn-time">
+
+              </div>
+            </div>
+        </div>
+      
+        <div class="flex-btn">
+          <a href="#page-2" class="back-btn">
+            Again
+          </a>
+          <a href="#page-1" class="back-btn">
+            Exit
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="page-7" class="page">
+      <div class="card p-3">
+        <h1>Input Individual Priority Number (Higher number presents higher priority)</h1>
+        <div class="form" id="pt-content">
+        </div>
+        <div class="flex-btn">
+          <a href="#page-6" id="pt-values" class="btn">
+            Next
+          </a>
+          <a href="#page-5" class="back-btn">
+            Back
+          </a>
+        </div>
+      </div>
+    
+    </section>
+
+    <section id="page-8" class="page">
+      <div class="card p-3">
+        <h1>Input Deadline for each process</h1>
+        <div class="form" id="d-content">
+        </div>
+        <div class="flex-btn">
+          <a href="#page-6" id="d-values" class="btn">
+            Next
+          </a>
+          <a href="#page-5" class="back-btn">
+            Back
+          </a>
+        </div>
+      </div>
+    
+    </section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
